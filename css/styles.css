@@ -10,6 +10,21 @@ html {
   overflow-y: scroll;
 }
 
+/* Estructura para que el footer siempre quede abajo */
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body > main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .header-biblioweb {
   background-color: var(--marca-azul);
 }
@@ -64,7 +79,6 @@ h1,
 h2 {
   font-family: "Roboto", sans-serif;
 }
-
 
 .portada-libro {
   height: 15rem;
@@ -139,7 +153,7 @@ h1 {
 }
 
 .etiqueta-vista {
-  display : inline-flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.375rem;
   padding: 0.25rem 0.75rem;
@@ -386,6 +400,7 @@ h1 {
   background-color: var(--marca-azul, #002B5B);
   color: var(--marca-marfil, #F9F5EB);
   border-top: 2px solid var(--marca-naranja, #F07B3F);
+  margin-top: auto;
 }
 
 .footer-biblioweb .footer-marca {
@@ -395,4 +410,32 @@ h1 {
 
 .footer-biblioweb .footer-marca i {
   color: var(--marca-naranja, #F07B3F);
+}
+
+.caja-login {
+  width: 100%;
+  max-width: 420px;
+  margin: auto;
+}
+
+.btn-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease;
+}
+
+.btn-whatsapp img {
+  display: block;
+  width: 50px;
+  height: auto;
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.1);
 }

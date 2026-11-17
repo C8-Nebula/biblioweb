@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio | BibliowEB</title>
+  <title>Inicio | BiblioWEB</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
         integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX"
         crossorigin="anonymous">
@@ -38,7 +38,115 @@
   </header>
 
   <main>
-   
+    <!-- Seccion de Bienvenida -->
+    <section class="portada py-5 text-center">
+      <div class="container">
+        <h1 class="display-5 fw-bold mb-3">Bienvenidos a BibliowEB</h1>
+        <p class="lead mb-4">El espacio ideal para conocer la biblioteca, consultar nuestra gran variedad de libros, revisar servicios y estar al tanto de todo.</p>
+        <a class="btn btn-primary btn-lg" href="pages/catalogo.html">Revisa nuestro catálogo</a>
+      </div>
+    </section>
+
+    <!-- Carrusel de imágenes -->
+    <section class="container my-4">
+      <div id="carruselBiblioteca" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carruselBiblioteca" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carruselBiblioteca" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carruselBiblioteca" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" style="max-height: 400px;">
+          <div class="carousel-item active">
+            <img src="assets/img/images.jpeg" class="d-block w-100 object-fit-cover" alt="Sala de lectura" style="height: 400px;">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+              <h5>Nuestras instalaciones</h5>
+              <p>Un ambiente tranquilo y cómodo para estudiar y leer.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/codigolimpio.jpeg" class="d-block w-100 object-fit-cover" alt="Sección de libros" style="height: 400px;">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+              <h5>Variedad de ejemplares</h5>
+              <p>Encuentra literatura, tecnología, ciencia y mucho más.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/carlossagan.jpeg" class="d-block w-100 object-fit-cover" alt="Espacios culturales" style="height: 400px;">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+              <h5>Eventos y cultura</h5>
+              <p>Espacios pensados para el aprendizaje y la comunidad.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselBiblioteca" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselBiblioteca" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Qué encontrarás (Servicios / Secciones) -->
+    <section class="container py-4">
+      <h2 class="text-center mb-4 h3">Nuestros Servicios</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <article class="card h-100 tarjeta-categoria text-center p-3">
+            <div class="card-body">
+              <i class="bi bi-journal-bookmark-fill text-primary fs-1 mb-3"></i>
+              <h3 class="card-title h5">Préstamo de Libros</h3>
+              <p class="card-text">Lleva a casa tus lecturas favoritas de forma ágil y sencilla con tu registro.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="card h-100 tarjeta-categoria text-center p-3">
+            <div class="card-body">
+              <i class="bi bi-laptop text-primary fs-1 mb-3"></i>
+              <h3 class="card-title h5">Salas de Cómputo</h3>
+              <p class="card-text">Equipos listos para consultas académicas, investigación y trabajos en grupo.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="card h-100 tarjeta-categoria text-center p-3">
+            <div class="card-body">
+              <i class="bi bi-calendar-event text-primary fs-1 mb-3"></i>
+              <h3 class="card-title h5">Agenda Cultural</h3>
+              <p class="card-text">Participa en clubes de lectura, talleres, charlas y presentaciones de libros.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Horarios de atención -->
+    <section class="container my-5">
+      <div class="card shadow-sm p-4 bg-body-tertiary">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <h3 class="h4"><i class="bi bi-clock-fill text-warning me-2"></i>Horarios de Atención</h3>
+            <p class="text-muted mb-0">Ven y visítanos en los siguientes horarios disponibles:</p>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-unstyled mb-0">
+              <li class="py-1 border-bottom d-flex justify-content-between">
+                <span><strong>Lunes a Viernes:</strong></span> <span>8:00 a.m. – 8:00 p.m.</span>
+              </li>
+              <li class="py-1 border-bottom d-flex justify-content-between">
+                <span><strong>Sábados:</strong></span> <span>9:00 a.m. – 4:00 p.m.</span>
+              </li>
+              <li class="py-1 d-flex justify-content-between">
+                <span><strong>Domingos y Festivos:</strong></span> <span>Cerrado</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer-biblioweb py-3" data-bs-theme="dark">
@@ -49,9 +157,20 @@
       <p class="mb-0">&copy; 2026 BibliowEB. Todos los derechos reservados.</p>
     </div>
   </footer>
+
+  <!-- Botón de WhatsApp -->
+  <button type="button" class="btn-whatsapp" id="btnWhatsApp">
+    <img src="assets/img/whatsapp1.png" alt="WhatsApp" width="50">
+  </button>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
           crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
+  <script>
+    document.getElementById("btnWhatsApp").addEventListener("click", function() {
+      window.open("https://wa.me/573001234567", "_blank");
+    });
+  </script>
 </body>
 </html>
