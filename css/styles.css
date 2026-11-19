@@ -439,3 +439,34 @@ h1 {
 .btn-whatsapp:hover {
   transform: scale(1.1);
 }
+
+/* La navegación hereda el tema de Bootstrap seleccionado en la página. */
+.header-biblioweb .nav-link {
+  color: var(--bs-nav-link-color);
+}
+
+.header-biblioweb .nav-link:hover,
+.header-biblioweb .nav-link:focus-visible {
+  color: var(--bs-nav-link-hover-color);
+}
+
+.header-biblioweb .nav-link.active {
+  color: var(--bs-navbar-active-color);
+}
+
+.libro-destacado h2 {
+  color: var(--bs-heading-color);
+}
+
+[data-bs-theme="dark"] .btn-primary,
+[data-bs-theme="dark"] .btn-outline-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-border-color: #8bb9fe;
+  --bs-btn-hover-border-color: #a8cbff;
+  --bs-btn-active-border-color: #a8cbff;
+  --bs-btn-focus-shadow-rgb: 139, 185, 254;
+}
+
+[data-bs-theme="dark"] .btn-outline-primary {
+  --bs-btn-color: #8bb9fe;
+}

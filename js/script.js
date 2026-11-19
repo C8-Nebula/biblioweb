@@ -55,3 +55,15 @@ const botonTema = document.getElementById("boton-tema");
 
     buscadorLibros.addEventListener("input", actualizarCatalogo);
   }
+const menuPanel = document.getElementById("menu-panel");
+if (menuPanel) {
+  menuPanel.hidden = sessionStorage.getItem("sesionActiva") !== "true";
+}
+
+const cerrarSesion = document.getElementById("cerrar-sesion");
+if (cerrarSesion) {
+  cerrarSesion.addEventListener("click", () => {
+    sessionStorage.removeItem("sesionActiva");
+    window.location.href = "../index.html";
+  });
+}
